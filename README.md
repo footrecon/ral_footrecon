@@ -14,17 +14,21 @@ Replace the placeholders in `index.html`:
 - BibTeX entry
 - Contact email
 
-Put images, teaser figures, and videos in `assets/`, then reference them from
-`index.html`, for example:
+Put images and teaser figures in `assets/`, then reference them from `index.html`,
+for example:
 
 ```html
 <img src="assets/teaser.png" alt="Overview of the proposed method" />
 ```
 
+GitHub does not upload or store empty folders. If `assets/` seems to disappear,
+make sure it contains at least one file, such as `assets/README.md` or
+`assets/teaser.png`.
+
 ## Publish With GitHub Pages
 
 1. Create a GitHub repository, for example `ral-project-page`.
-2. Upload `index.html`, `style.css`, and the `assets/` folder to the repository root.
+2. Upload `index.html`, `style.css`, `README.md`, and the `assets/` folder to the repository root.
 3. In GitHub, open `Settings` → `Pages`.
 4. Under `Build and deployment`, select `Deploy from a branch`.
 5. Choose branch `main` and folder `/root`, then save.

@@ -3,51 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RA-L Project Page</title>
+    <title>Paper Title Goes Here | RA-L 2026</title>
     <meta
       name="description"
       content="Project page for an IEEE Robotics and Automation Letters paper."
     />
-    <meta property="og:title" content="RA-L Project Page" />
+    <meta property="og:title" content="Paper Title Goes Here" />
     <meta
       property="og:description"
       content="Paper, video, code, results, and citation for an RA-L paper."
     />
+    <meta property="og:image" content="assets/teaser.png" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#">RA-L 2026</a>
+      <a class="brand" href="#">Paper Title</a>
       <nav aria-label="Primary navigation">
         <a href="#abstract">Abstract</a>
-        <a href="#method">Method</a>
-        <a href="#results">Results</a>
-        <a href="#bibtex">BibTeX</a>
+        <a href="#contributions">Contributions</a>
+        <a href="#video">Video</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#citation">Citation</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <div class="hero-media" aria-label="Project visual placeholder">
-          <div class="paper-preview">
-            <div class="robot-stage">
-              <div class="trajectory"></div>
-              <div class="platform"></div>
-              <div class="arm arm-a"></div>
-              <div class="arm arm-b"></div>
-              <div class="sensor"></div>
-              <div class="object object-a"></div>
-              <div class="object object-b"></div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-content">
-          <p class="venue">IEEE Robotics and Automation Letters</p>
+        <div class="hero-copy">
+          <p class="venue">IEEE Robotics and Automation Letters · 2026</p>
           <h1>Paper Title Goes Here</h1>
           <p class="subtitle">
-            A concise one-sentence summary of the method, robot setting, or main
-            contribution.
+            A crisp one-sentence summary of the robot task, the central method,
+            and the strongest result.
           </p>
           <p class="authors">
             First Author<sup>1</sup>, Second Author<sup>1</sup>, Third
@@ -58,25 +47,76 @@
             Institute
           </p>
           <div class="actions" aria-label="Project links">
-            <a class="button primary" href="#" aria-label="Open paper PDF">
-              <span>PDF</span>
-            </a>
-            <a class="button" href="#" aria-label="Open arXiv page">
-              <span>arXiv</span>
-            </a>
-            <a class="button" href="#" aria-label="Open code repository">
-              <span>Code</span>
-            </a>
-            <a class="button" href="#bibtex" aria-label="Jump to citation">
-              <span>BibTeX</span>
-            </a>
+            <a class="button primary" href="#">Paper</a>
+            <a class="button" href="#">arXiv</a>
+            <a class="button" href="#">Code</a>
+            <a class="button" href="#citation">BibTeX</a>
           </div>
+        </div>
+
+        <figure class="hero-figure">
+          <img
+            src="assets/teaser.png"
+            alt="Robotics research teaser showing a robot arm and trajectory visualization"
+          />
+          <figcaption>
+            Replace this teaser with your system overview, real-robot rollout,
+            or strongest qualitative result.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section abstract-section" id="abstract">
+        <div class="section-label">
+          <span>Abstract</span>
+        </div>
+        <div class="abstract-copy">
+          <h2>Short, Scannable Summary of the Work</h2>
+          <p>
+            Replace this paragraph with the paper abstract. For a project page,
+            the first two sentences matter most: state the problem, then state
+            why the proposed method changes the outcome. Follow with the key
+            mechanism and the most convincing result in simulation or hardware.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="contributions">
+        <div class="section-heading">
+          <p class="eyebrow">Highlights</p>
+          <h2>Main Contributions</h2>
+        </div>
+        <div class="contribution-grid">
+          <article>
+            <span>01</span>
+            <h3>Method</h3>
+            <p>
+              Summarize the main algorithm, representation, controller, planner,
+              model, or training procedure in one focused paragraph.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>System</h3>
+            <p>
+              Describe the robot platform, sensors, data pipeline, or deployment
+              setup that makes the result reproducible.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Results</h3>
+            <p>
+              Put the headline number here: success rate, speedup, accuracy,
+              robustness, sample efficiency, or real-world generalization.
+            </p>
+          </article>
         </div>
       </section>
 
       <section class="section video-section" id="video">
         <div class="section-heading">
-          <p class="eyebrow">Video</p>
+          <p class="eyebrow">Demo</p>
           <h2>Project Video</h2>
         </div>
         <div class="video-frame">
@@ -89,75 +129,65 @@
         </div>
       </section>
 
-      <section class="section two-column" id="abstract">
-        <div class="section-heading">
-          <p class="eyebrow">Abstract</p>
-          <h2>What This Work Solves</h2>
-        </div>
-        <p>
-          Replace this paragraph with the paper abstract. Keep the first
-          sentence especially clear because readers often scan the project page
-          before opening the PDF. Mention the task, the core technical idea, and
-          the strongest quantitative or qualitative result.
-        </p>
-      </section>
-
       <section class="section" id="method">
         <div class="section-heading">
-          <p class="eyebrow">Method</p>
-          <h2>Approach</h2>
+          <p class="eyebrow">Approach</p>
+          <h2>Pipeline</h2>
         </div>
-        <div class="method-grid">
-          <article class="method-card">
-            <span class="step">01</span>
-            <h3>Problem Setup</h3>
-            <p>
-              Briefly describe the robot, environment, sensors, or learning
-              setting.
-            </p>
-          </article>
-          <article class="method-card">
-            <span class="step">02</span>
-            <h3>Core Model</h3>
-            <p>
-              Summarize the main architecture, planner, controller, dataset, or
-              optimization routine.
-            </p>
-          </article>
-          <article class="method-card">
-            <span class="step">03</span>
-            <h3>Deployment</h3>
-            <p>
-              Explain how the method is evaluated in simulation, hardware, or
-              real-world experiments.
-            </p>
-          </article>
+        <div class="pipeline">
+          <div class="pipeline-step">
+            <strong>Input</strong>
+            <p>Observation, robot state, task specification, or dataset.</p>
+          </div>
+          <div class="pipeline-step">
+            <strong>Representation</strong>
+            <p>Latent model, affordance map, trajectory field, or policy state.</p>
+          </div>
+          <div class="pipeline-step">
+            <strong>Action</strong>
+            <p>Planner, controller, policy output, or robot command.</p>
+          </div>
+          <div class="pipeline-step">
+            <strong>Evaluation</strong>
+            <p>Simulation benchmark, real-robot trials, or ablation protocol.</p>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="results">
+      <section class="section" id="experiments">
         <div class="section-heading">
-          <p class="eyebrow">Results</p>
-          <h2>Key Findings</h2>
+          <p class="eyebrow">Experiments</p>
+          <h2>Results at a Glance</h2>
         </div>
-        <div class="results-grid">
-          <figure>
-            <div class="figure-placeholder">Figure 1</div>
+        <div class="results-layout">
+          <figure class="result-large">
+            <img
+              src="assets/teaser.png"
+              alt="Placeholder result visualization for the paper"
+            />
             <figcaption>
-              Replace with a main qualitative result, system overview, or
-              comparison figure.
+              Replace with the main experimental figure, comparison image, or
+              real-robot rollout montage.
             </figcaption>
           </figure>
-          <figure>
-            <div class="figure-placeholder">Figure 2</div>
-            <figcaption>
-              Add an ablation, real-robot rollout, or quantitative chart.
-            </figcaption>
-          </figure>
+          <div class="metric-stack" aria-label="Key metrics">
+            <div class="metric">
+              <span class="metric-value">+00%</span>
+              <span class="metric-label">Success rate improvement</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">0.0x</span>
+              <span class="metric-label">Faster planning or inference</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">00</span>
+              <span class="metric-label">Real-world trials</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="bibtex">
+      <section class="section citation-section" id="citation">
         <div class="section-heading">
           <p class="eyebrow">Citation</p>
           <h2>BibTeX</h2>
@@ -173,8 +203,8 @@
 
     <footer>
       <p>
-        For questions, contact
-        <a href="mailto:your.email@example.com">your.email@example.com</a>.
+        Questions:
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
       </p>
     </footer>
   </body>
