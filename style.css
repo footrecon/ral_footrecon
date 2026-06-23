@@ -160,6 +160,7 @@ h1 {
 }
 
 .motivation-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
@@ -180,6 +181,24 @@ h1 {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: contain;
+}
+
+.motivation-arrow {
+  position: absolute;
+  left: calc(((100% - 28px) / 3) + 7px);
+  top: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  padding: 4px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #333333;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1;
+  text-align: center;
 }
 
 .motivation-card figcaption {
@@ -405,6 +424,14 @@ footer p {
   .cvae-motivation,
   .video-grid {
     grid-template-columns: 1fr;
+  }
+
+  .motivation-arrow {
+    position: static;
+    transform: none;
+    padding: 4px 0;
+    border: 0;
+    background: transparent;
   }
 
   .title-line {
