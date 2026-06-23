@@ -55,15 +55,16 @@
       <section class="content-section" id="abstract">
         <h2>Abstract</h2>
         <p>
-          Replace this paragraph with the paper abstract. Start with the problem
-          your RA-L paper addresses, then describe the central technical idea and
-          the practical setting. Close with the strongest result, such as
-          real-robot success rate, robustness, accuracy, or speed.
+          Reliable terrain maps are essential for spatial reasoning and navigation in unstructured environments, but camera- and LiDAR-based mapping can become incomplete in harsh outdoor conditions. 
+          Foot–terrain contacts provide complementary geometric measurements at physically visited locations, remaining available when exteroceptive observations are unreliable. 
+          Because these contacts only sparsely sample the terrain, reconstructing the unobserved geometry between them is necessary to obtain a spatially coherent map.
+          This problem is inherently under-constrained, as multiple terrain geometries can satisfy the same sparse contact measurements.
         </p>
         <p>
-          Project pages are often skimmed before the PDF is opened, so keep this
-          section readable and concrete. Avoid overly long notation-heavy
-          paragraphs here; save those details for the paper.
+          We present FootRecon, a framework for proprioception-only terrain reconstruction from sparse foot--terrain contacts. 
+          FootRecon introduces a cVAE-based framework to learn a contact-conditioned latent terrain prior, inferring plausible geometry in unobserved regions between footholds.
+          The reconstructed terrain preserves sharp, non-smooth geometric features while ensuring consistency with measured contacts within a global 2.5D height map.
+          Experimental results across diverse outdoor terrains demonstrate robust and online reconstruction in challenging real-world conditions.
         </p>
       </section>
 
