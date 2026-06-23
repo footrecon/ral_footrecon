@@ -18,7 +18,7 @@
     />
     <meta property="og:image" content="assets/teaser.png" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="style.css?v=20260623-5" />
+    <link rel="stylesheet" href="style.css?v=20260623-6" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -66,6 +66,77 @@
           outdoor terrains demonstrate robust and online reconstruction in
           challenging real-world conditions.
         </p>
+      </section>
+
+      <section class="content-section" id="motivation">
+        <h2>Motivation</h2>
+        <p class="motivation-lead">
+          Losing vision does not mean losing all information about the terrain.
+          Even when exteroceptive observations are degraded, quadrupedal robots
+          still physically interact with the ground through sparse foot contacts.
+        </p>
+
+        <div class="motivation-grid" aria-label="Motivation examples">
+          <figure class="motivation-card">
+            <img
+              src="assets/motivation_real-world_말풍선x.png"
+              alt="Real-world terrain condition"
+            />
+            <figcaption>Real-world terrain</figcaption>
+          </figure>
+
+          <figure class="motivation-card motivation-swap">
+            <img
+              class="swap-base"
+              src="assets/motivation_smog_찡그림_말풍선x.png"
+              alt="Smog degraded visual observation"
+            />
+            <img
+              class="swap-hover"
+              src="assets/motivation_illumination_찡그림.png"
+              alt="Terrain information recovered through physical interaction"
+            />
+            <figcaption>Smog or low visibility</figcaption>
+          </figure>
+
+          <figure class="motivation-card motivation-swap">
+            <img
+              class="swap-base"
+              src="assets/motivation_illumination_찡그림_말풍선x.png"
+              alt="Illumination degraded visual observation"
+            />
+            <img
+              class="swap-hover"
+              src="assets/motivation_smog_찡그림.png"
+              alt="Terrain information recovered through physical interaction"
+            />
+            <figcaption>Extreme illumination</figcaption>
+          </figure>
+        </div>
+
+        <p class="hover-note">
+          Hover over degraded scenes to reveal the complementary information
+          available from physical interaction.
+        </p>
+
+        <div class="cvae-motivation">
+          <figure class="figure-block">
+            <img
+              src="assets/motivation_ill_posed.png"
+              alt="Sparse contacts make terrain reconstruction ill-posed"
+            />
+          </figure>
+          <div>
+            <h3>Why a conditional VAE?</h3>
+            <p>
+              Sparse foot contacts constrain the terrain only at visited
+              locations, leaving many plausible surfaces between footholds. A
+              contact-conditioned latent prior lets FootRecon infer realistic
+              terrain hypotheses while remaining consistent with measured
+              contacts.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="content-section visual-section paired-figure-section" id="main-figures">

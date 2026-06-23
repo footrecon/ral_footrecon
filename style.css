@@ -151,6 +151,83 @@ h1 {
   margin: 0 0 14px;
 }
 
+.motivation-lead {
+  max-width: 880px;
+  margin: 0 auto 24px;
+  color: #333333;
+  font-size: 1.08rem;
+  text-align: center;
+}
+
+.motivation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.motivation-card {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #ffffff;
+}
+
+.motivation-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.motivation-card figcaption {
+  margin: 0;
+  padding: 8px 10px 10px;
+  border-top: 1px solid var(--line);
+  font-size: 0.88rem;
+  font-weight: 650;
+  text-align: center;
+}
+
+.motivation-swap .swap-hover {
+  position: absolute;
+  inset: 0 0 auto;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.motivation-swap:hover .swap-hover,
+.motivation-swap:focus-within .swap-hover {
+  opacity: 1;
+}
+
+.hover-note {
+  margin: 12px auto 30px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  text-align: center;
+}
+
+.cvae-motivation {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(260px, 0.88fr);
+  gap: 24px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.cvae-motivation h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.cvae-motivation p {
+  margin: 0;
+}
+
 .video-frame {
   overflow: hidden;
   border-radius: 3px;
@@ -323,7 +400,9 @@ footer p {
     padding-top: 30px;
   }
 
-.video-grid {
+  .motivation-grid,
+  .cvae-motivation,
+  .video-grid {
     grid-template-columns: 1fr;
   }
 
