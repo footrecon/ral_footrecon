@@ -231,6 +231,9 @@ h1 {
   right: 8px;
   bottom: 8px;
   z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   padding: 3px 7px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 999px;
@@ -240,6 +243,15 @@ h1 {
   font-weight: 650;
   line-height: 1.2;
   pointer-events: none;
+}
+
+.hover-cue::before {
+  width: 11px;
+  height: 11px;
+  background: center / contain no-repeat
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23444444' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3l7.07 17 2.51-7.39L20 10.07 3 3z'/%3E%3Cpath d='M13 13l6 6'/%3E%3Cpath d='M17 4h3v3'/%3E%3Cpath d='M20 4l-5 5'/%3E%3C/svg%3E");
+  content: "";
+  flex: 0 0 auto;
 }
 
 .motivation-card .hover-cue {
