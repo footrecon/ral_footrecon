@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Paper Title Goes Here | RA-L 2026</title>
+    <title>Paper Title Goes Here</title>
     <meta
       name="description"
       content="Project page for an IEEE Robotics and Automation Letters paper."
@@ -18,107 +18,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#">Paper Title</a>
-      <nav aria-label="Primary navigation">
-        <a href="#abstract">Abstract</a>
-        <a href="#contributions">Contributions</a>
-        <a href="#video">Video</a>
-        <a href="#experiments">Experiments</a>
-        <a href="#citation">Citation</a>
-      </nav>
-    </header>
-
     <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="venue">IEEE Robotics and Automation Letters · 2026</p>
-          <h1>Paper Title Goes Here</h1>
-          <p class="subtitle">
-            A crisp one-sentence summary of the robot task, the central method,
-            and the strongest result.
-          </p>
-          <p class="authors">
-            First Author<sup>1</sup>, Second Author<sup>1</sup>, Third
-            Author<sup>2</sup>
-          </p>
-          <p class="affiliations">
-            <sup>1</sup>Your Lab, Your University · <sup>2</sup>Collaborating
-            Institute
-          </p>
-          <div class="actions" aria-label="Project links">
-            <a class="button primary" href="#">Paper</a>
-            <a class="button" href="#">arXiv</a>
-            <a class="button" href="#">Code</a>
-            <a class="button" href="#citation">BibTeX</a>
-          </div>
-        </div>
+      <section class="paper-header">
+        <h1>Paper Title Goes Here</h1>
+        <p class="authors">
+          <a href="#">First Author</a><sup>1</sup>,
+          <a href="#">Second Author</a><sup>1</sup>,
+          <a href="#">Third Author</a><sup>2</sup>
+        </p>
+        <p class="affiliations">
+          <sup>1</sup>Your Lab, Your University,
+          <sup>2</sup>Collaborating Institute
+        </p>
+        <p class="notes">IEEE Robotics and Automation Letters, 2026</p>
 
-        <figure class="hero-figure">
-          <img
-            src="assets/teaser.png"
-            alt="Robotics research teaser showing a robot arm and trajectory visualization"
-          />
-          <figcaption>
-            Replace this teaser with your system overview, real-robot rollout,
-            or strongest qualitative result.
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="section abstract-section" id="abstract">
-        <div class="section-label">
-          <span>Abstract</span>
-        </div>
-        <div class="abstract-copy">
-          <h2>Short, Scannable Summary of the Work</h2>
-          <p>
-            Replace this paragraph with the paper abstract. For a project page,
-            the first two sentences matter most: state the problem, then state
-            why the proposed method changes the outcome. Follow with the key
-            mechanism and the most convincing result in simulation or hardware.
-          </p>
+        <div class="link-row" aria-label="Project links">
+          <a class="project-link" href="#">Paper</a>
+          <a class="project-link" href="#">arXiv</a>
+          <a class="project-link" href="#video">Video</a>
+          <a class="project-link" href="#">Code</a>
         </div>
       </section>
 
-      <section class="section" id="contributions">
-        <div class="section-heading">
-          <p class="eyebrow">Highlights</p>
-          <h2>Main Contributions</h2>
-        </div>
-        <div class="contribution-grid">
-          <article>
-            <span>01</span>
-            <h3>Method</h3>
-            <p>
-              Summarize the main algorithm, representation, controller, planner,
-              model, or training procedure in one focused paragraph.
-            </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>System</h3>
-            <p>
-              Describe the robot platform, sensors, data pipeline, or deployment
-              setup that makes the result reproducible.
-            </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Results</h3>
-            <p>
-              Put the headline number here: success rate, speedup, accuracy,
-              robustness, sample efficiency, or real-world generalization.
-            </p>
-          </article>
-        </div>
+      <section class="teaser">
+        <img
+          src="assets/teaser.png"
+          alt="Robotics research teaser showing a robot arm and trajectory visualization"
+        />
+        <h2>
+          A concise one-sentence takeaway describing what the proposed method
+          enables and why it matters.
+        </h2>
       </section>
 
-      <section class="section video-section" id="video">
-        <div class="section-heading">
-          <p class="eyebrow">Demo</p>
-          <h2>Project Video</h2>
-        </div>
+      <section class="content-section" id="abstract">
+        <h2>Abstract</h2>
+        <p>
+          Replace this paragraph with the paper abstract. Start with the problem
+          your RA-L paper addresses, then describe the central technical idea and
+          the practical setting. Close with the strongest result, such as
+          real-robot success rate, robustness, accuracy, or speed.
+        </p>
+        <p>
+          Project pages are often skimmed before the PDF is opened, so keep this
+          section readable and concrete. Avoid overly long notation-heavy
+          paragraphs here; save those details for the paper.
+        </p>
+      </section>
+
+      <section class="content-section" id="video">
+        <h2>Video</h2>
         <div class="video-frame">
           <iframe
             title="Project video"
@@ -129,69 +78,79 @@
         </div>
       </section>
 
-      <section class="section" id="method">
-        <div class="section-heading">
-          <p class="eyebrow">Approach</p>
-          <h2>Pipeline</h2>
-        </div>
-        <div class="pipeline">
-          <div class="pipeline-step">
-            <strong>Input</strong>
-            <p>Observation, robot state, task specification, or dataset.</p>
-          </div>
-          <div class="pipeline-step">
-            <strong>Representation</strong>
-            <p>Latent model, affordance map, trajectory field, or policy state.</p>
-          </div>
-          <div class="pipeline-step">
-            <strong>Action</strong>
-            <p>Planner, controller, policy output, or robot command.</p>
-          </div>
-          <div class="pipeline-step">
-            <strong>Evaluation</strong>
-            <p>Simulation benchmark, real-robot trials, or ablation protocol.</p>
-          </div>
-        </div>
+      <section class="content-section" id="method">
+        <h2>Method</h2>
+        <figure class="figure-block">
+          <img
+            src="assets/teaser.png"
+            alt="Placeholder method overview for the proposed robotics system"
+          />
+          <figcaption>
+            Overview of the proposed method. Replace this image with your method
+            diagram or system overview, then describe the inputs, core model,
+            robot action output, and training or deployment loop.
+          </figcaption>
+        </figure>
       </section>
 
-      <section class="section" id="experiments">
-        <div class="section-heading">
-          <p class="eyebrow">Experiments</p>
-          <h2>Results at a Glance</h2>
+      <section class="content-section" id="comparisons-real">
+        <h2>Comparisons (Real robot)</h2>
+        <div class="tabs" aria-label="Real robot scenes">
+          <span>Scene 1</span>
+          <span>Scene 2</span>
+          <span>Scene 3</span>
+          <span>Scene 4</span>
         </div>
-        <div class="results-layout">
-          <figure class="result-large">
-            <img
-              src="assets/teaser.png"
-              alt="Placeholder result visualization for the paper"
-            />
-            <figcaption>
-              Replace with the main experimental figure, comparison image, or
-              real-robot rollout montage.
-            </figcaption>
+        <div class="comparison-grid">
+          <figure>
+            <img src="assets/teaser.png" alt="Proposed method placeholder" />
+            <figcaption>Ours</figcaption>
           </figure>
-          <div class="metric-stack" aria-label="Key metrics">
-            <div class="metric">
-              <span class="metric-value">+00%</span>
-              <span class="metric-label">Success rate improvement</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value">0.0x</span>
-              <span class="metric-label">Faster planning or inference</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value">00</span>
-              <span class="metric-label">Real-world trials</span>
-            </div>
-          </div>
+          <figure>
+            <div class="placeholder">Baseline A</div>
+            <figcaption>Baseline A</figcaption>
+          </figure>
+          <figure>
+            <div class="placeholder">Baseline B</div>
+            <figcaption>Baseline B</figcaption>
+          </figure>
+          <figure>
+            <div class="placeholder">Baseline C</div>
+            <figcaption>Baseline C</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section citation-section" id="citation">
-        <div class="section-heading">
-          <p class="eyebrow">Citation</p>
-          <h2>BibTeX</h2>
+      <section class="content-section" id="comparisons-sim">
+        <h2>Comparisons (Simulation)</h2>
+        <div class="tabs" aria-label="Simulation scenes">
+          <span>Task 1</span>
+          <span>Task 2</span>
+          <span>Task 3</span>
+          <span>Task 4</span>
         </div>
+        <div class="comparison-grid">
+          <figure>
+            <img src="assets/teaser.png" alt="Proposed method placeholder" />
+            <figcaption>Ours</figcaption>
+          </figure>
+          <figure>
+            <div class="placeholder">Baseline A</div>
+            <figcaption>Baseline A</figcaption>
+          </figure>
+          <figure>
+            <div class="placeholder">Baseline B</div>
+            <figcaption>Baseline B</figcaption>
+          </figure>
+          <figure>
+            <div class="placeholder">Baseline C</div>
+            <figcaption>Baseline C</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="content-section" id="citation">
+        <h2>BibTeX</h2>
         <pre><code>@article{lastname2026paper,
   title   = {Paper Title Goes Here},
   author  = {Lastname, First and Collaborator, Second},
@@ -203,8 +162,8 @@
 
     <footer>
       <p>
-        Questions:
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        This website is adapted for an RA-L project page. Contact:
+        <a href="mailto:your.email@example.com">your.email@example.com</a>.
       </p>
     </footer>
   </body>
