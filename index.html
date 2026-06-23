@@ -19,6 +19,7 @@
     <meta property="og:image" content="assets/teaser.png" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main>
@@ -38,17 +39,6 @@
           <a class="project-link" href="#video">Video</a>
           <a class="project-link" href="#">Code</a>
         </div>
-      </section>
-
-      <section class="teaser">
-        <img
-          src="assets/teaser.png"
-          alt="Robotics research teaser showing a robot arm and trajectory visualization"
-        />
-        <h2>
-          A concise one-sentence takeaway describing what the proposed method
-          enables and why it matters.
-        </h2>
       </section>
 
       <section class="content-section" id="abstract">
@@ -78,87 +68,131 @@
         </p>
       </section>
 
-      <section class="content-section" id="video">
-        <h2>Video</h2>
-        <div class="video-frame">
-          <iframe
-            title="Project video"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-
-      <section class="content-section" id="method">
-        <h2>Method</h2>
+      <section class="content-section visual-section" id="main-overview">
         <figure class="figure-block">
           <img
-            src="assets/teaser.png"
-            alt="Placeholder method overview for the proposed robotics system"
+            src="assets/mainnew.png"
+            alt="FootRecon main result overview"
           />
-          <figcaption>
-            Overview of the proposed method. Replace this image with your method
-            diagram or system overview, then describe the inputs, core model,
-            robot action output, and training or deployment loop.
-          </figcaption>
         </figure>
       </section>
 
-      <section class="content-section" id="comparisons-real">
-        <h2>Comparisons (Real robot)</h2>
-        <div class="tabs" aria-label="Real robot scenes">
-          <span>Scene 1</span>
-          <span>Scene 2</span>
-          <span>Scene 3</span>
-          <span>Scene 4</span>
-        </div>
-        <div class="comparison-grid">
-          <figure>
-            <img src="assets/teaser.png" alt="Proposed method placeholder" />
-            <figcaption>Ours</figcaption>
+      <section class="content-section visual-section" id="main-detail">
+        <figure class="figure-block">
+          <img
+            src="assets/mainv7.png"
+            alt="FootRecon contact-based terrain reconstruction examples"
+          />
+        </figure>
+      </section>
+
+      <section class="content-section visual-section" id="pipeline">
+        <h2>Pipeline</h2>
+        <figure class="figure-block hover-video">
+          <img
+            src="assets/pipelinev11.png"
+            alt="FootRecon reconstruction pipeline"
+          />
+          <video
+            class="hover-video-player"
+            src="assets/network_arch_video.mov"
+            muted
+            playsinline
+            loop
+            preload="metadata"
+            aria-label="Network architecture animation"
+          ></video>
+        </figure>
+      </section>
+
+      <section class="content-section visual-section" id="network-architecture">
+        <figure class="figure-block">
+          <img
+            src="assets/network_arch_short.png"
+            alt="FootRecon network architecture"
+          />
+        </figure>
+      </section>
+
+      <section class="content-section" id="field-experiments">
+        <h2>Experiments (Field experiments)</h2>
+        <figure class="figure-block dataset-overview">
+          <img
+            src="assets/traintest.png"
+            alt="Training and test dataset terrains"
+          />
+        </figure>
+        <div class="video-grid">
+          <figure class="video-card">
+            <video
+              class="scroll-video"
+              src="assets/inferencevideo/1-widestaircase.mov"
+              muted
+              playsinline
+              loop
+              preload="metadata"
+            ></video>
+            <figcaption>Wide staircase</figcaption>
           </figure>
-          <figure>
-            <div class="placeholder">Baseline A</div>
-            <figcaption>Baseline A</figcaption>
+          <figure class="video-card">
+            <video
+              class="scroll-video"
+              src="assets/inferencevideo/2-coirmat.mov"
+              muted
+              playsinline
+              loop
+              preload="metadata"
+            ></video>
+            <figcaption>Coir mat</figcaption>
           </figure>
-          <figure>
-            <div class="placeholder">Baseline B</div>
-            <figcaption>Baseline B</figcaption>
+          <figure class="video-card">
+            <video
+              class="scroll-video"
+              src="assets/inferencevideo/3-bambooforest.mov"
+              muted
+              playsinline
+              loop
+              preload="metadata"
+            ></video>
+            <figcaption>Bamboo forest</figcaption>
           </figure>
-          <figure>
-            <div class="placeholder">Baseline C</div>
-            <figcaption>Baseline C</figcaption>
+          <figure class="video-card">
+            <video
+              class="scroll-video"
+              src="assets/inferencevideo/4-steepslope.mov"
+              muted
+              playsinline
+              loop
+              preload="metadata"
+            ></video>
+            <figcaption>Steep slope</figcaption>
+          </figure>
+          <figure class="video-card">
+            <video
+              class="scroll-video"
+              src="assets/inferencevideo/5-cave.mov"
+              muted
+              playsinline
+              loop
+              preload="metadata"
+            ></video>
+            <figcaption>Cave</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="content-section" id="comparisons-sim">
-        <h2>Comparisons (Simulation)</h2>
-        <div class="tabs" aria-label="Simulation scenes">
-          <span>Task 1</span>
-          <span>Task 2</span>
-          <span>Task 3</span>
-          <span>Task 4</span>
-        </div>
-        <div class="comparison-grid">
-          <figure>
-            <img src="assets/teaser.png" alt="Proposed method placeholder" />
-            <figcaption>Ours</figcaption>
-          </figure>
-          <figure>
-            <div class="placeholder">Baseline A</div>
-            <figcaption>Baseline A</figcaption>
-          </figure>
-          <figure>
-            <div class="placeholder">Baseline B</div>
-            <figcaption>Baseline B</figcaption>
-          </figure>
-          <figure>
-            <div class="placeholder">Baseline C</div>
-            <figcaption>Baseline C</figcaption>
-          </figure>
-        </div>
+      <section class="content-section" id="meshnav">
+        <h2>Downstream task: MeshNav</h2>
+        <figure class="figure-block video-feature">
+          <video
+            class="scroll-video"
+            src="assets/downstreamtask_mashnav.mov"
+            muted
+            playsinline
+            loop
+            preload="metadata"
+          ></video>
+        </figure>
       </section>
 
       <!-- Enable this section after the double-anonymous review period.
