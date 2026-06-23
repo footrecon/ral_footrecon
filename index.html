@@ -8,7 +8,10 @@
       name="description"
       content="Project page for an IEEE Robotics and Automation Letters paper."
     />
-    <meta property="og:title" content="FootRecon: Quadrupedal Terrain Reconstruction from Sparse Foot Contacts" />
+    <meta
+      property="og:title"
+      content="FootRecon: Quadrupedal Terrain Reconstruction from Sparse Foot Contacts"
+    />
     <meta
       property="og:description"
       content="Paper, video, code, results, and citation for an RA-L paper."
@@ -20,17 +23,13 @@
   <body>
     <main>
       <section class="paper-header">
-        <h1>FootRecon: Quadrupedal Terrain Reconstruction from Sparse Foot Contacts</h1>
+        <h1>
+          <span class="title-line">FootRecon: Quadrupedal Terrain Reconstruction</span>
+          <span class="title-line">from Sparse Foot Contacts</span>
+        </h1>
         <p class="authors">
-          <a>Anonymous Authors (Paper under double-anonymous review)</a>
-          <!-- <a href="#">First Author</a><sup>1</sup>,
-          <a href="#">Second Author</a><sup>1</sup>,
-          <a href="#">Third Author</a><sup>2</sup> -->
+          Anonymous Authors (Paper under double-anonymous review)
         </p>
-        <!-- <p class="affiliations">
-          <sup>1</sup>Your Lab, Your University,
-          <sup>2</sup>Collaborating Institute
-        </p> -->
         <p class="notes">Submission for Robotics and Automation Letters, 2026</p>
 
         <div class="link-row" aria-label="Project links">
@@ -55,16 +54,27 @@
       <section class="content-section" id="abstract">
         <h2>Abstract</h2>
         <p>
-          Reliable terrain maps are essential for spatial reasoning and navigation in unstructured environments, but camera- and LiDAR-based mapping can become incomplete in harsh outdoor conditions. 
-          Foot–terrain contacts provide complementary geometric measurements at physically visited locations, remaining available when exteroceptive observations are unreliable. 
-          Because these contacts only sparsely sample the terrain, reconstructing the unobserved geometry between them is necessary to obtain a spatially coherent map.
-          This problem is inherently under-constrained, as multiple terrain geometries can satisfy the same sparse contact measurements.
+          Reliable terrain maps are essential for spatial reasoning and
+          navigation in unstructured environments, but camera- and LiDAR-based
+          mapping can become incomplete in harsh outdoor conditions.
+          Foot-terrain contacts provide complementary geometric measurements at
+          physically visited locations, remaining available when exteroceptive
+          observations are unreliable. Because these contacts only sparsely
+          sample the terrain, reconstructing the unobserved geometry between
+          them is necessary to obtain a spatially coherent map. This problem is
+          inherently under-constrained, as multiple terrain geometries can
+          satisfy the same sparse contact measurements.
         </p>
         <p>
-          We present FootRecon, a framework for proprioception-only terrain reconstruction from sparse foot--terrain contacts. 
-          FootRecon introduces a cVAE-based framework to learn a contact-conditioned latent terrain prior, inferring plausible geometry in unobserved regions between footholds.
-          The reconstructed terrain preserves sharp, non-smooth geometric features while ensuring consistency with measured contacts within a global 2.5D height map.
-          Experimental results across diverse outdoor terrains demonstrate robust and online reconstruction in challenging real-world conditions.
+          We present FootRecon, a framework for proprioception-only terrain
+          reconstruction from sparse foot-terrain contacts. FootRecon introduces
+          a cVAE-based framework to learn a contact-conditioned latent terrain
+          prior, inferring plausible geometry in unobserved regions between
+          footholds. The reconstructed terrain preserves sharp, non-smooth
+          geometric features while ensuring consistency with measured contacts
+          within a global 2.5D height map. Experimental results across diverse
+          outdoor terrains demonstrate robust and online reconstruction in
+          challenging real-world conditions.
         </p>
       </section>
 
@@ -151,22 +161,26 @@
         </div>
       </section>
 
-      <!-- <section class="content-section" id="citation">
+      <!-- Enable this section after the double-anonymous review period.
+      <section class="content-section" id="citation">
         <h2>BibTeX</h2>
         <pre><code>@article{lastname2026paper,
-  title   = {Paper Title Goes Here},
+  title   = {FootRecon: Quadrupedal Terrain Reconstruction from Sparse Foot Contacts},
   author  = {Lastname, First and Collaborator, Second},
   journal = {IEEE Robotics and Automation Letters},
   year    = {2026}
 }</code></pre>
-      </section> -->
+      </section>
+      -->
     </main>
 
-    <!-- <footer>
+    <!-- Enable this footer after the double-anonymous review period.
+    <footer>
       <p>
         This website is adapted for an RA-L project page. Contact:
         <a href="mailto:your.email@example.com">your.email@example.com</a>.
       </p>
     </footer>
+    -->
   </body>
-</html> -->
+</html>
