@@ -159,18 +159,12 @@ h1 {
   text-align: center;
 }
 
-.motivation-contrast {
+.motivation-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   margin-top: 22px;
-  align-items: center;
-}
-
-.degraded-column {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
+  align-items: stretch;
 }
 
 .motivation-card {
@@ -180,15 +174,6 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 3px;
   background: #ffffff;
-}
-
-.motivation-arrow {
-  color: #333333;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
-  font-weight: 600;
-  line-height: 1;
-  text-align: center;
 }
 
 .motivation-card img {
@@ -416,15 +401,10 @@ footer p {
     padding-top: 30px;
   }
 
-  .motivation-contrast,
-  .degraded-column,
+  .motivation-grid,
   .cvae-motivation,
   .video-grid {
     grid-template-columns: 1fr;
-  }
-
-  .motivation-arrow {
-    padding: 4px 0;
   }
 
   .title-line {

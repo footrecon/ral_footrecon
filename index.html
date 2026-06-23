@@ -18,7 +18,7 @@
     />
     <meta property="og:image" content="assets/teaser.png" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="style.css?v=20260623-8" />
+    <link rel="stylesheet" href="style.css?v=20260623-9" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -93,7 +93,7 @@
           still physically interact with the ground through sparse foot contacts.
         </p>
 
-        <div class="motivation-contrast" aria-label="Motivation examples">
+        <div class="motivation-grid" aria-label="Motivation examples">
           <figure class="motivation-card">
             <img
               src="assets/motivation_real-world_말풍선x.png"
@@ -102,37 +102,33 @@
             <figcaption>Real-world terrain</figcaption>
           </figure>
 
-          <div class="motivation-arrow" aria-hidden="true">&lt;-&gt;</div>
+          <figure class="motivation-card motivation-swap">
+            <img
+              class="swap-base"
+              src="assets/motivation_smog_찡그림_말풍선x.png"
+              alt="Smog degraded visual observation"
+            />
+            <img
+              class="swap-hover"
+              src="assets/motivation_smog_찡그림.png"
+              alt="Smog scene with physical interaction information"
+            />
+            <figcaption>Smog or low visibility</figcaption>
+          </figure>
 
-          <div class="degraded-column">
-            <figure class="motivation-card motivation-swap">
-              <img
-                class="swap-base"
-                src="assets/motivation_smog_찡그림_말풍선x.png"
-                alt="Smog degraded visual observation"
-              />
-              <img
-                class="swap-hover"
-                src="assets/motivation_smog_찡그림.png"
-                alt="Smog scene with physical interaction information"
-              />
-              <figcaption>Smog or low visibility</figcaption>
-            </figure>
-
-            <figure class="motivation-card motivation-swap">
-              <img
-                class="swap-base"
-                src="assets/motivation_illumination_찡그림_말풍선x.png"
-                alt="Illumination degraded visual observation"
-              />
-              <img
-                class="swap-hover"
-                src="assets/motivation_illumination_찡그림.png"
-                alt="Illumination scene with physical interaction information"
-              />
-              <figcaption>Extreme illumination</figcaption>
-            </figure>
-          </div>
+          <figure class="motivation-card motivation-swap">
+            <img
+              class="swap-base"
+              src="assets/motivation_illumination_찡그림_말풍선x.png"
+              alt="Illumination degraded visual observation"
+            />
+            <img
+              class="swap-hover"
+              src="assets/motivation_illumination_찡그림.png"
+              alt="Illumination scene with physical interaction information"
+            />
+            <figcaption>Extreme illumination</figcaption>
+          </figure>
         </div>
 
         <p class="hover-note">
@@ -143,7 +139,7 @@
         <div class="cvae-motivation">
           <figure class="figure-block">
             <img
-              src="assets/motivation_ill_posed.png"
+              src="assets/ill-posed.png"
               alt="Sparse contacts make terrain reconstruction ill-posed"
             />
           </figure>
