@@ -18,7 +18,7 @@
     />
     <meta property="og:image" content="assets/teaser.png" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="style.css?v=20260623-6" />
+    <link rel="stylesheet" href="style.css?v=20260623-7" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -38,6 +38,23 @@
           <a class="project-link" href="#">arXiv</a>
           <a class="project-link" href="#video">Video</a>
           <a class="project-link" href="#">Code</a>
+        </div>
+      </section>
+
+      <section class="content-section visual-section paired-figure-section" id="main-figures">
+        <div class="main-figure-row">
+          <figure class="figure-block equal-height-figure">
+            <img
+              src="assets/mainnew.png"
+              alt="FootRecon main result overview"
+            />
+          </figure>
+          <figure class="figure-block equal-height-figure">
+            <img
+              src="assets/mainv7.png"
+              alt="FootRecon contact-based terrain reconstruction examples"
+            />
+          </figure>
         </div>
       </section>
 
@@ -76,8 +93,8 @@
           still physically interact with the ground through sparse foot contacts.
         </p>
 
-        <div class="motivation-grid" aria-label="Motivation examples">
-          <figure class="motivation-card">
+        <div class="motivation-contrast" aria-label="Motivation examples">
+          <figure class="motivation-card motivation-reference">
             <img
               src="assets/motivation_real-world_말풍선x.png"
               alt="Real-world terrain condition"
@@ -85,33 +102,37 @@
             <figcaption>Real-world terrain</figcaption>
           </figure>
 
-          <figure class="motivation-card motivation-swap">
-            <img
-              class="swap-base"
-              src="assets/motivation_smog_찡그림_말풍선x.png"
-              alt="Smog degraded visual observation"
-            />
-            <img
-              class="swap-hover"
-              src="assets/motivation_illumination_찡그림.png"
-              alt="Terrain information recovered through physical interaction"
-            />
-            <figcaption>Smog or low visibility</figcaption>
-          </figure>
+          <div class="degraded-column">
+            <figure class="motivation-card motivation-swap">
+              <img
+                class="swap-base"
+                src="assets/motivation_smog_찡그림_말풍선x.png"
+                alt="Smog degraded visual observation"
+              />
+              <img
+                class="swap-hover"
+                src="assets/motivation_smog_찡그림.png"
+                alt="Smog scene with physical interaction information"
+              />
+              <span class="hover-badge">Hover</span>
+              <figcaption>Smog or low visibility</figcaption>
+            </figure>
 
-          <figure class="motivation-card motivation-swap">
-            <img
-              class="swap-base"
-              src="assets/motivation_illumination_찡그림_말풍선x.png"
-              alt="Illumination degraded visual observation"
-            />
-            <img
-              class="swap-hover"
-              src="assets/motivation_smog_찡그림.png"
-              alt="Terrain information recovered through physical interaction"
-            />
-            <figcaption>Extreme illumination</figcaption>
-          </figure>
+            <figure class="motivation-card motivation-swap">
+              <img
+                class="swap-base"
+                src="assets/motivation_illumination_찡그림_말풍선x.png"
+                alt="Illumination degraded visual observation"
+              />
+              <img
+                class="swap-hover"
+                src="assets/motivation_illumination_찡그림.png"
+                alt="Illumination scene with physical interaction information"
+              />
+              <span class="hover-badge">Hover</span>
+              <figcaption>Extreme illumination</figcaption>
+            </figure>
+          </div>
         </div>
 
         <p class="hover-note">
@@ -136,23 +157,6 @@
               contacts.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section class="content-section visual-section paired-figure-section" id="main-figures">
-        <div class="main-figure-row">
-          <figure class="figure-block equal-height-figure">
-            <img
-              src="assets/mainnew.png"
-              alt="FootRecon main result overview"
-            />
-          </figure>
-          <figure class="figure-block equal-height-figure">
-            <img
-              src="assets/mainv7.png"
-              alt="FootRecon contact-based terrain reconstruction examples"
-            />
-          </figure>
         </div>
       </section>
 
