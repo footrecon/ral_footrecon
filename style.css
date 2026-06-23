@@ -226,6 +226,26 @@ h1 {
   opacity: 1;
 }
 
+.hover-cue {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 4;
+  padding: 3px 7px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #444444;
+  font-size: 0.74rem;
+  font-weight: 650;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.motivation-card .hover-cue {
+  bottom: 44px;
+}
+
 .hover-note {
   margin: 12px auto 30px;
   color: var(--muted);
@@ -335,6 +355,10 @@ h1 {
 .hover-video:hover .hover-video-player,
 .hover-video:focus-within .hover-video-player {
   opacity: 1;
+}
+
+.hover-video .hover-cue {
+  bottom: 10px;
 }
 
 figcaption {
