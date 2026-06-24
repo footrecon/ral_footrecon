@@ -460,18 +460,39 @@ footer p {
     padding-top: 30px;
   }
 
-  .motivation-grid,
   .cvae-motivation,
   .video-grid {
     grid-template-columns: 1fr;
   }
 
+  .motivation-grid {
+    gap: 6px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .motivation-arrow {
-    position: static;
-    transform: none;
-    padding: 4px 0;
-    border: 0;
-    background: transparent;
+    left: calc(((100% - 12px) / 3) + 3px);
+    padding: 3px 5px;
+    font-size: 0.75rem;
+  }
+
+  .motivation-card figcaption {
+    padding: 6px 4px 7px;
+    font-size: clamp(0.58rem, 2.4vw, 0.78rem);
+    line-height: 1.18;
+  }
+
+  .motivation-card .hover-cue {
+    right: 4px;
+    bottom: 34px;
+    gap: 3px;
+    padding: 2px 5px;
+    font-size: clamp(0.48rem, 1.8vw, 0.64rem);
+  }
+
+  .motivation-card .hover-cue::before {
+    width: 8px;
+    height: 8px;
   }
 
   .title-line {
